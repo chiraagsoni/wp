@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>About Us</title>
+<meta charset="utf-8">
+<link rel="SHORTCUT ICON" href="../images/favicon.ico">
+
+
+<link rel="stylesheet" href="css/reset.css" type="text/css"> 
+<!-- Reset CSS - removes the default margin-padding of the browser -->
+
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<!-- Style CSS - General Style -->
+
+<link rel="stylesheet" href="css/layout.css" type="text/css">
+<!-- layout CSS - General Layout of the pages -->
+
+
+<script type="text/javascript" src="js/jquery-1.6.min.js"></script>
+<!-- jQuery plug-in for the slider -->
+
+
+
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="js/html5.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+
+function formSubmit() {
+	var contactForm = window.contactForm;
+	if((contactForm.name.value == "") || (contactForm.name.value == " ") || (contactForm.name.value == undefined) ) {
+		contactForm.name.style.background = "red";
+		alert('please enter the Name');
+		
+	}
+	else if((contactForm.email.value == "") || (contactForm.email.value == " ") || (contactForm.email.value == undefined) ) {
+		contactForm.name.style.background = "red";
+		alert('please enter the Email');
+		
+	}
+	else if((contactForm.msg.value == "") || (contactForm.msg.value == " ") || (contactForm.msg.value == undefined)) {
+		contactForm.name.style.background = "red";
+		alert('please enter the Message');
+		
+	}
+	else {
+		document.getElementById('contact-form').submit();
+	}
+	
+
+}
+
+function authenticateForm(sender) {
+	
+	if((sender.value == '') || ((sender.value == ' '))) {
+		$(sender).css('background', 'red');
+		sender.focus(); 
+		alert('please enter the ' + sender.name);
+		return;
+		
+	} 
+	
+	if(sender.id == 'contactName') {
+		
+		var letters = /^[A-Za-z]+$/;  
+		if(sender.value.match(letters))	{ 
+			$(sender).css('background', 'white');
+			return;	
+		} else {
+			$(sender).css('background', 'red');
+			alert('Name must have alphabet characters only');  
+			sender.focus();  
+			return;  
+		}  
+	}
+	if(sender.id == 'contactEmail') {
+		var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; 
+		if(sender.value.match(mailformat))	{  
+			$(sender).css('background', 'white');
+			return;  
+		} else {  
+			$(sender).css('background', 'red');
+			alert("You have entered an invalid email address!");    
+			sender.focus();  
+			return;  
+		}  
+	}
+	if(sender.id == 'contactMsg') {
+		if((sender.value != '') ||(sender.value != ' ')) {
+			$(sender).css('background', 'white');
+		}
+	}
+	
+}
+
+function clearForm() {
+	var contactForm = window.contactForm;
+	contactForm.name.value = "";
+	contactForm.email.value = "";
+	contactForm.msg.value = "";
+}
+
+</script>
+</head>
+<body id="page5">
+<?php
+include 'include/connection.php';
+
+?>
+
+<!-- header -->
+	<div class="bg">
+		<div class="main">
+			<header>
+				<div class="row-1">
+					<h1>
+						<a class="logo" href="index.html">Arty</a>
+						
+					</h1>
+					
+				</div>
+				<div class="row-2">
+					<nav>
+						<ul class="menu">
+						  <li><a href="index.html">Home</a></li>
+						  <li><a href="galleries.html">Galleries</a></li>
+						  <li><a href="feedbackus.html">Feedback Us</a></li>
+						  <li class="last-item"><a href="aboutus.html" class="active">About Us</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+<!-- content -->
+			<section id="content">
+				<div>
+
+
+<div class="centhead">ThE MAKERS</div>
+	<ul class="ch-grid">
+	
+<li>
+		<div class="ch-item ch-img-3">
+			<div class="ch-info">
+				<h3>Reshma Malik</h3>
+				<p>MENTOR</p>
+			</div>
+		</div>
+	</li>
+
+<li>
+		<div class="ch-item ch-img-1">
+			<div class="ch-info">
+				<h3>Chirag Soni</h3>
+		<div style="color:white">(S24 - 148)</div>		<p>CO-DEVELOPER</p>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class="ch-item ch-img-2">
+			<div class="ch-info">
+				<h3>Jatin Valecha</h3>
+	<div style="color:white">(S24 - 157)</div>			<p>CO-DEVELOPER</p>
+			</div>
+		</div>
+	</li>
+	</ul>
+<br><br>
+<p class="motiv">
+All Rights are Reserved for Artisans 2016.
+</div>					
+
+
+			</section>
+<!-- footer -->
+			<footer>
+				<div class="row-top">
+					<div class="row-padding">
+						<div class="wrapper">
+							<div class="col-1">
+								<h4>Our Sponsors:</h4>
+								<dl class="address">
+
+<ul class="list-1">
+<li><a href="#" />Shuttertock</li>
+<li><a href="#" />Getty Images</li>
+<li><a href="#" />Pixabay</li>
+</ul>		</dl>
+							</div>
+							<div class="col-2">
+							<h4>From :</h4>
+
+	
+<div style="color:#9d9d9d">Thadomal<br>Shahani<br>Engineering<br>College</div>
+					</div>
+							<div class="col-3">
+								<h4>Follow Us:</h4>
+<ul class="list-services">
+									<li class="item-1"><a href="#">Facebook</a></li>
+									<li class="item-2"><a href="#">Twitter</a></li>
+									<li class="item-3"><a href="#">LinkedIn</a></li>
+								</ul>
+							</div>
+							<div class="col-4">
+								<div class="indent3">
+									<strong class="footer-logo">ART<strong>Galleries</strong></strong>
+									<strong class="phone"><strong></strong>Everyone is Creative</strong>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row-bot">
+					<div class="aligncenter">
+						<p class="p0 footerNames"><span> &copy Artisans 2016, All Rights Reserved.</span></p>
+						
+						
+<!-- {%FOOTER_LINK} -->
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+	
+</body>
+</html>

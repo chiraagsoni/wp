@@ -1,0 +1,26 @@
+open artclub.html,contact1.html,srvc.html(those are the pages made by me)
+
+
+doubts
+1)pad on transition
+2)figure tag
+2)time tag
+3)href="#"
+4)dl
+5)fieldset
+6)nav
+7)time class
+
+pagesName
+
+
+doubts
+index page
+header part-why use 
+<a class="prev" href="#">prev</a>
+						 
+ <a class="next" href="#">prev</a>
+lang=en
+
+meta charset-utf-8
+

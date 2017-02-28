@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<title>Feedback Us</title>
+
+<meta charset="utf-8">
+
+
+<link rel="SHORTCUT ICON" href="../images/favicon.ico">
+
+<link rel="stylesheet" href="css/reset.css" type="text/css"> 
+
+<!-- Reset CSS - removes the default margin-padding of the browser -->
+
+
+
+<link rel="stylesheet" href="css/style.css" type="text/css">
+
+<!-- Style CSS - General Style -->
+
+
+
+<link rel="stylesheet" href="css/layout.css" type="text/css">
+
+<!-- layout CSS - General Layout of the pages -->
+
+
+
+<script type="text/javascript" src="js/jquery-1.6.min.js"></script>
+<!-- jQuery plug-in for the slider -->
+
+<!--[if lt IE 9]>
+	
+<script type="text/javascript" src="js/html5.js"></script>
+
+
+<![endif]-->
+
+
+<script type="text/javascript">
+
+function formSubmit() {
+	var feedbackForm = window.feedbackForm;
+	if((feedbackForm.name.value == "") || (feedbackForm.name.value == " ") || (feedbackForm.name.value == undefined) ) {
+		feedbackForm.name.style.background = "red";
+		alert('please enter the Name');
+		
+	}
+	else if((feedbackForm.email.value == "") || (feedbackForm.email.value == " ") || (feedbackForm.email.value == undefined) ) {
+		feedbackForm.name.style.background = "red";
+		alert('please enter the Email');
+		
+	}
+	else if((feedbackForm.msg.value == "") || (feedbackForm.msg.value == " ") || (feedbackForm.msg.value == undefined)) {
+		feedbackForm.name.style.background = "red";
+		alert('please enter the Message');
+		
+	}
+	else {
+		document.getElementById('feedback-form').submit();
+	}
+	
+
+}
+
+function authenticateForm(sender) {
+	
+	if((sender.value == '') || ((sender.value == ' '))) {
+		$(sender).css('background', 'red');
+		sender.focus(); 
+		alert('please enter the ' + sender.name);
+		return;
+		
+	} 
+	
+	if(sender.id == 'contactName') {
+		
+		var letters = /^[A-Za-z]+$/;  
+		if(sender.value.match(letters))	{ 
+			$(sender).css('background', 'white');
+			return;	
+		} else {
+			$(sender).css('background', 'red');
+			alert('Name must have alphabet characters only');  
+			sender.focus();  
+			return;  
+		}  
+	}
+	if(sender.id == 'contactEmail') {
+		var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; 
+		if(sender.value.match(mailformat))	{  
+			$(sender).css('background', 'white');
+			return;  
+		} else {  
+			$(sender).css('background', 'red');
+			alert("You have entered an invalid email address!");    
+			sender.focus();  
+			return;  
+		}  
+	}
+	if(sender.id == 'contactMsg') {
+		if((sender.value != '') ||(sender.value != ' ')) {
+			$(sender).css('background', 'white');
+		}
+	}
+	
+}
+
+function clearForm() {
+	var feedbackForm = window.feedbackForm;
+	feedbackForm.name.value = "";
+	feedbackForm.email.value = "";
+	feedbackForm.msg.value = "";
+
+}
+
+</script>
+</head>
+<body id="page4">
+
+<?php
+include 'include/connection.php';
+
+?>
+<!-- header -->
+
+	<div class="bg">
+		<div class="main">
+		<header>
+					<div class="row-1">
+					<h1>
+						<a class="logo" href="index.html">Arty</a>
+			
+					</h1>
+					
+				</div>
+				<div class="row-2">
+				<nav>
+						<ul class="menu">
+						  <li><a href="index.html">Home</a></li>
+						  <li><a href="galleries.html">Galleries</a></li>
+						  <li><a href="feedbackus.html" class="active">Feedback Us</a></li>
+						  <li class="last-item"><a href="aboutus.html">About Us</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+<!-- content --><div class="ic"></div>
+			<section id="content">
+<h2 class="p0"style="color: #416e91;">Super Honest Feedback Form</h2>
+
+<br>
+<div class="indent" id="feeform">
+
+<formid="feedback-form" name="feedbackForm" action="saveFeed.php" method="post" enctype="multipart/form-data">
+
+<fieldset>
+<br>
+<label>Name:<br><input name="name" type="text" id="contactName" onBlur="authenticateForm(this);" placeholder="Name"/></label>
+<br><br>
+<label>Email:<br><input name="email" type="email" id="contactEmail" onBlur="authenticateForm(this);" placeholder="Email"/></label>   
+<br><br>
+Suggestions:<br><textarea name="msg" id="contactMsg" onBlur="authenticateForm(this);" placeholder="Message"></textarea></div>
+<br><br>
+<div class="buttons">
+<a class="button-2" href="#" onClick="clearForm();">Clear</a>
+<a class="button-2" href="#" onClick="formSubmit();">Send</a>
+</div>				
+</fieldset>	
+
+
+
+
+</form>
+
+						</section>
+<!-- footer -->
+			<footer>
+				<div class="row-top">
+					<div class="row-padding">
+						<div class="wrapper">
+							<div class="col-1">
+								<h4>Our Sponsors:</h4>
+								<dl class="address">
+
+<ul class="list-1">
+<li><a href="#" />Shuttertock</li>
+<li><a href="#" />Getty Images</li>
+<li><a href="#" />Pixabay</li>
+</ul>		</dl>
+							</div>
+							<div class="col-2">
+							<h4>From :</h4>
+
+	
+<div style="color:#9d9d9d">Thadomal<br>Shahani<br>Engineering<br>College</div>
+						</div>
+							<div class="col-3">
+								<h4>Follow Us:</h4>
+<ul class="list-services">
+									<li class="item-1"><a href="#">Facebook</a></li>
+									<li class="item-2"><a href="#">Twitter</a></li>
+									<li class="item-3"><a href="#">LinkedIn</a></li>
+								</ul>
+							</div>
+							<div class="col-4">
+								<div class="indent3">
+									<strong class="footer-logo">ART<strong>Galleries</strong></strong>
+									<strong class="phone"><strong></strong>Everyone is Creative</strong>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row-bot">
+					<div class="aligncenter">
+						<p class="p0 footerNames"><span> &copy Copyright 2016, all rights reserved with<strong> Art Galleries</strong></span></p>
+						
+						
+<!-- {%FOOTER_LINK} -->
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+	
+</body>
+</html>
