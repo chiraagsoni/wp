@@ -1,0 +1,162 @@
+@charset "utf-8";
+/* CSS Document */
+
+		#eventsDiv{
+			 
+			 vertical-align:top;
+			 overflow:visible; 
+			 text-align:left; 
+			 width:380px; 
+			 height:250px; 
+			 border:#ccc 1px solid;
+			 margin-left:10px;
+			 margin-right:3px;
+		}
+
+		#eventsDiv ul {
+			list-style-type:none;
+			padding: 0;
+			margin: 0 23px 0 25px;
+			border:#099 0px solid;
+		}
+		#eventsDiv ul li {
+			clear: both;
+			overflow: hidden;
+			border-top: #CCC 1px solid;
+			padding: 5px 0;
+		}
+
+		#eventsDiv li:hover {
+			background-color:#F3F3F3;
+			color:#333;
+		}
+
+
+		.eventlinks {
+			float:right;
+			border: #000 1px dashed;
+			text-align:right;
+			font-size:8px;
+			width:40px;
+		}
+		.eventlinks img {
+			float:right;
+			display:block;
+			margin: 2px 0;
+		}
+		.highlight {
+			color:#9F9F98;
+
+		}
+		.eventinfo {
+			width: 330px;
+			border: #30C 0px solid;
+			float: left;
+
+		}
+		.eventDetails {
+			vertical-align:top;
+			display: inline-block;
+			*display: inline;
+			zoom: 1;
+			width:210px;
+			border:#0F0 0px solid;
+			color:#9F9F98;	
+		}
+		.eventTitle {
+			color:#666;
+		}
+		#selectedDate {
+			letter-spacing:0.2em;
+			font-size:0.9em;
+		}
+		
+		.infoless {
+			height:50px;	
+		}
+
+
+/* UPCOMING */
+
+				
+				#upcomingweek ul {
+					list-style-type:none;
+					margin:0;
+					padding:0;
+					border:#F00 0px solid;
+				}
+				#upcomingweek li {
+					position:absolute;
+					color: #fff;
+					margin: 0px 15px 5px 15px;
+					font-size: 1em;
+					border:#000 0px solid;
+
+					
+				}
+				.eventDate {
+					font-weight:bold;
+				}
+
+/* UPCOMING END */
+
+
+#header #menu_eventcalendar {
+	color: #ccc;
+}
+
+		#leftDiv {
+			clear:both;
+			position:relative;
+			display: inline-block;
+			*display: inline;
+			zoom: 1;
+			width:350px;
+			border:#333 0px dotted;		
+		}
+
+/* Calendar week */
+
+						#days {
+							color:#FFF;
+							font-size:1.2em;
+							height:45px;
+							padding:0;
+							margin:0;
+							border:#CCC 0px solid;
+							position:absolute;
+							width:auto;
+							top:0;
+						}
+						#days ul li{
+							background-color:#9F9F98;
+							border:#FFF 0px solid;
+							display:block;
+							width:35px;
+							height:45px;
+							float:left;
+							font-size:8px;
+							letter-spacing:0.1em;
+						}
+						.day {
+							text-align:center;
+						}
+						#days ul li:hover{
+							background-color:#666;
+							cursor:hand;
+							cursor:pointer;
+						}
+						.selected{
+							background-color:#666;
+						}						
+						.day>div:first-child {
+							margin-top:12px;	
+						}
+
+
+
+
+.aligncenter {text-align:center}
+.p0 {margin-bottom:0px}
+.footerNames { font-weight:bold;}
+.footerNames span {color: #4169e1;}

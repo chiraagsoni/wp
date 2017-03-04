@@ -1,0 +1,188 @@
+@charset "utf-8";
+/* CSS Document */
+
+#header #menu_artistfinder {
+	color: #ccc;
+}
+#links ul li {
+	border: #666 0px solid;
+	display: block;
+	height: 65px;
+	width: 260px;
+	margin-bottom: 10px;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 9px;
+	letter-spacing: 0.3em;
+}
+#links ul {
+	padding: 0;
+	padding-left: 19px;
+	margin: 0;
+}
+#intro p {
+	color: #666;
+	margin: 0 30px;
+	font-size: 10px;
+}
+#arrowback, #arrowforward {
+	display: none;
+}
+
+<!--FILTERS START-->
+ #filters {
+ margin-top:2px;
+ height:30px;
+ position:relative;
+ overflow:visible;
+ border:#F00 0px solid;
+ z-index:50;
+}
+#filters label {
+	color: #fff;
+}
+#filters>form>div {
+	float: left;
+	overflow: visible;
+	/*				background-image:url(images/arrow-down.png);
+				background-repeat:no-repeat;
+				background-position:98% 50%;
+*/
+	background-color: #999;
+	height: 22px;
+	margin-right: 1px;
+}
+#filters>form>div>label {
+	float: left;
+	border: #000 0px solid;
+	margin-top: 4px;
+	margin-left: 8px;
+}
+#filters>form>div>input[type=text] {
+	padding-left: 4px;
+	padding-right: 4px;
+	float: left;
+	font-size: 10px;
+	height: 12px;
+	width: 150px;
+	border: #000 0px solid;
+	margin-top: 4px;
+	margin-left: 4px;
+}
+#filters .arrow {
+	border: #030 0px solid;
+	float: left;
+	margin: 10px 8px;
+}
+
+#filters div:hover, #filters label {
+	cursor: pointer;
+	cursor: hand;
+}
+
+#searchBtn {
+	float: left;
+	background-color: #333;
+	border: none;
+	color: #FFF;
+	margin: 4px 5px;
+	font-size: 8px;
+	line-height: 12px;
+	letter-spacing: 0.3em;
+	padding: 1px 10px;
+}
+
+#genreDiv {
+	position: relative;
+	min-width: 120px;
+	width: 120px;
+}
+#genreList, #yearList {
+	display: none;
+	padding:5px 0;
+	background-color: #FFF;
+	z-index: 10;
+	border: #ccc 1px solid;
+	position: absolute;
+	top: 22px;
+	left: 0;
+	width: 118px;
+}
+#yearDiv {
+	width: 65px;
+	position: relative;
+}
+#yearList {
+	width: 65px;
+}
+.dropdownList {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.dropdownList li a {
+	padding: 2px;
+	padding-left: 10px;
+	color: #666;
+	display: block;
+	background-color: #FFF;
+}
+.dropdownList li a:hover {
+	background-color: #EBEBEB;
+}
+.clickarea:hover {
+	z-index: 200;
+	cursor: pointer;
+	cursor: hand;
+}
+
+
+/* GALLERY */
+
+
+#slider {
+	height:230px;	
+}
+/* GALLERY CSS */
+
+
+#gallery {
+	border:#000 0px solid;
+	position:absolute;
+	width:750px;
+	overflow:hidden;
+	height:250px;
+}
+
+#gallery.artwork:hover{
+}
+
+.artwork {
+	float:left;
+	margin-right:15px;
+	margin-bottom:10px;
+	border:#090 0px solid;
+	width:95px;
+}
+.artwork .imageHolder{
+	width:95px;
+	height:95px;
+	border:#F00 0px solid;
+	overflow:hidden;
+	position:relative;			
+}
+.artwork .imageHolder img{
+/*			width:95px;*/
+	left:-13px;
+	position:absolute;
+	height:95px;
+}		
+.title_refno {
+	font-size:0.9em;
+	float:left;
+}
+.title_year {
+	font-size:9px;
+	float:right;
+}
+

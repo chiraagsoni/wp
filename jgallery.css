@@ -1,0 +1,284 @@
+@charset "utf-8";
+/* CSS Document */
+
+#header #menu_exhibitions {
+	color: #ccc;
+}
+#links ul li {
+	border: #666 0px solid;
+	display: block;
+	height: 65px;
+	width: 260px;
+	margin-bottom: 10px;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 9px;
+	letter-spacing: 0.3em;
+}
+#links ul {
+	padding: 0;
+	padding-left: 19px;
+	margin: 0;
+}
+#intro p {
+	color: #666;
+	margin: 0 30px;
+	font-size: 10px;
+}
+/* FILTERS */
+
+		
+#filters {
+	margin-top: 3px;
+	height: 30px;
+	position: relative;
+	overflow: visible;
+	border: #F00 0px solid;
+	z-index: 50;
+}
+#filters label {
+	color: #fff;
+}
+
+#filters label:hover {
+	cursor: pointer;
+	cursor: hand;
+}
+
+
+#filters>form>div {
+	float: left;
+	overflow: visible;
+	/*				background-image:url(images/arrow-down.png);
+				background-repeat:no-repeat;
+				background-position:98% 50%;
+*/
+	background-color: #999;
+	height: 22px;
+	margin-right: 1px;
+}
+
+#filters>form>div>label {
+	float: left;
+	border: #000 0px solid;
+	margin-top: 4px;
+	margin-left: 8px;
+}
+#filters>form>div>input[type=text] {
+	padding-left: 4px;
+	padding-right: 4px;
+	float: left;
+	font-size: 10px;
+	height: 12px;
+	width: 150px;
+	border: #000 0px solid;
+	margin-top: 4px;
+	margin-left: 4px;
+}
+#filters .arrow {
+	border: #030 0px solid;
+	float: left;
+	margin: 10px 8px;
+}
+#searchBtn {
+	float: left;
+	background-color: #333;
+	border: none;
+	color: #FFF;
+	margin: 4px 5px;
+	font-size: 8px;
+	line-height: 12px;
+	letter-spacing: 0.3em;
+	padding: 1px 10px;
+}
+
+#filters>form>div:hover {
+	cursor: pointer;
+	cursor: hand;
+}
+
+#genreDiv {
+	min-width: 120px;
+	width: 120px;
+	position: relative;
+}
+#genreList, #yearList, #monthList, #eventList {
+	display: none;
+	background-color: #FFF;
+	z-index: 10;
+	outline: #ccc 1px solid;
+	position: absolute;
+	top: 22px;/*	width:118px;*/
+	left: 0;
+}
+#yearDiv {
+	position: relative;
+	width: 65px;
+}
+#yearList {
+	width: 65px;
+	left: 0;
+}
+#monthDiv {
+	position: relative;
+	width: 100px;
+}
+#monthList {
+	width: 100px;
+	left: 0;
+}
+#eventsDiv {
+	position: relative;
+	min-width: 200px;
+
+}
+
+
+#eventList {
+	min-width: 250px;
+	left: 0;
+}
+.dropdownList {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.dropdownList li a {
+	padding: 2px;
+	padding-left: 10px;
+	color: #666;
+	display: block;
+}
+.dropdownList li a:hover {
+	background-color: #EBEBEB;
+}
+.clickarea:hover {
+	cursor: pointer;
+	cursor: hand;
+}
+#preloader {
+	position: absolute;
+	width: 100%;
+	height: 200px;
+	z-index: 10;
+	top: 0px;
+	left: 0px;
+	text-align:center;
+	background-color:#FFF;
+}
+#apDiv1 {
+	position: absolute;
+	width: 200px;
+	height: 115px;
+	z-index: 1;
+}
+#slider {
+	height: 200px;
+}
+/* GALLERY CSS */
+		
+		
+#gallery {
+	border: #000 0px solid;
+	position: absolute;
+	/*			width:500px;*/
+	overflow: hidden;
+	height: 250px;
+}
+#gallery.artwork:hover {
+}
+.artwork {
+	float: left;
+	margin-right: 3px;
+	outline: #E6E6E6 1px solid;
+	outline-offset: -1px;
+	overflow: hidden;
+	width: 248px;
+}
+.artwork .imageHolder {
+	width: 95px;
+	height: 95px;
+	border: #F00 0px solid;
+	overflow: hidden;
+	position: relative;
+}
+.artwork .imageHolder img {
+	/*			width:95px;*/
+	left: -13px;
+	position: absolute;
+	height: 95px;
+	background: url(images/preloader/loading2.html) 50% 50% no-repeat;
+}
+.title_refno {
+	font-size: 9px;
+	float: left;
+}
+.title_year {
+	font-size: 9px;
+	float: right;
+}
+#artworkInfo ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+#artworkInfo ul li {
+}
+#artworkInfo {
+	font-size: 1em;
+	margin: 10px 0;
+	padding-top: 10px;
+	border-top: #CCC 0px solid;
+	overflow: hidden;
+	font-size: 1.0em;	
+
+}
+#artInfo {
+	border: #0C0 0px solid;
+	margin: 0 10px;
+	float: left;
+	width: 290px;
+}
+#artInfo li {
+	border: #03F 0px dotted;
+	padding: 0px;
+	clear: both;
+}
+.artInfoLabels {
+	float: left;
+	width: 65px;
+	margin-bottom: 3px;
+}
+.artInfoData {
+	float: left;
+	border: #090 0px solid;
+	width: 220px;
+	margin-bottom: 3px;
+}
+#artistBio {
+	position: relative;
+	padding-left: 20px;
+	float: right;
+	width: 425px;
+	height: 100px;
+	border-left: #ccc 1px solid;
+
+}
+#artistBio p {
+	margin: 0;
+}
+#artistName {
+
+	color: #666;
+}
+
+.fancybox-overlay {
+	background-color:#333;
+}
+
+
+
+.aligncenter {text-align:center}
+.p0 {margin-bottom:0px}
+.footerNames { font-weight:bold;}
+.footerNames span {color: #4169e1;}

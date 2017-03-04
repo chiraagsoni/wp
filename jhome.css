@@ -1,0 +1,165 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#arrowforward, #arrowback {
+/*	display:none;*/
+}
+#header #menu_home {
+	color:#ccc;	
+}
+#links {
+	text-align:right; 
+	float:right; 
+	width:260px;
+	color:#FFF;
+}
+
+#links td {
+	height:55px;
+}
+#links ul {
+	padding: 0;
+	margin: 0;
+}
+#links ul li {
+	border: #666 0px solid;
+	background-color:#9F9F99;
+	display: block;
+	height: 55px;
+	width: 260px;
+	margin-bottom: 10px;
+	/* [disabled]color: #FFF; */
+	/* [disabled]font-size: 9px; */
+}
+#links a, #links img {
+	color:#fff;
+	font-size:9px;
+	letter-spacing: 0.3em;
+	line-height:1.2em;
+	border:0;	
+}
+#links a:hover{
+	color:#CCC;	
+}
+
+.upcomingcontainer {
+	float:left;
+	position:relative;
+	width:860px; 
+	height:185px; 
+	border-right:#ccc 1px solid;
+}
+#upcomingweek {
+	height:166px;
+	width:844px;
+	position:absolute;
+	left:0;
+	top:20px;
+	z-index:100;
+	border:#090 0px solid;
+}
+#upcomingweek ul {
+	list-style-type:none;
+	margin:0;
+	padding:0 0 10px 0;
+
+}
+#upcomingweek li {
+	color: #666;
+	margin: 0px 30px 8px 0;
+
+
+	border:#000 0px solid;
+}
+.eventDate {
+	color:#666;
+	font-size: 1em;
+	font-weight:bold;
+}
+.eventInfo {
+	color:#999;
+	font-size: 1em;
+}
+
+.fullheight {
+	width:auto;
+	height:200px;
+}
+
+.fullwidth {
+	width:450px;
+	height:auto;	
+}
+
+
+			#onviewnow {
+/*				position:absolute;*/
+				position:relative;
+				border:#000 0px solid;				
+				width:750px;
+				height:200px;
+			}
+			#onviewnow a{
+				position:absolute;	
+			}
+			.onview {
+				float:left;
+				width:750px;
+				height:200px;
+			}
+		  
+		  	.onviewArtwork {
+				position:relative;
+				display:inline-block;			
+				vertical-align:top;				
+				border:#F00 0px solid;
+				height:200px;
+				width:450px;
+				overflow:hidden;
+			}
+			.onviewArtwork img {
+				position:absolute;
+				z-index:0;
+			}
+			.writeup {
+				display:inline-block;
+				vertical-align:top;
+				height:200px;
+				width:300px;
+				background-color:#4F514D;
+				color:#fff;
+/*				margin-right:-4px;*/
+			}
+			.onviewInfo {
+				padding:40px 20px 0px 20px; 
+			/*	letter-spacing:0.1em; 
+				font-weight:bold; */
+			}
+			.onviewTitle {
+				padding:0;
+				margin:0;	
+			}
+			.onviewText {
+				font-size:1em;
+				letter-spacing:0.05em;
+				border:#060 0px solid;
+			}
+			.onviewInfo p {
+				margin:10px;
+				line-height:1.25em;				
+			}
+
+		  
+			.slides_container>div {
+				width:750px;
+				height:200px;
+				display:block;
+			}
+
+
+
+.aligncenter {text-align:center}
+.p0 {margin-bottom:0px}
+.footerNames { font-weight:bold;}
+.footerNames span {color: #4169e1;}
